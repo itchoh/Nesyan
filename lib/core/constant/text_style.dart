@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:nesyan/colors.dart';
 
 class AppFontStyle{
   static TextStyle Title1(Color c){
@@ -179,7 +180,7 @@ class AppFontStyle{
   }
   static TextStyle buttont(){
     return TextStyle(
-      color: Colors.black,
+      color: white,
       fontSize: 16,
       fontWeight: FontWeight.w600,
       fontFamily: 'Inter',
