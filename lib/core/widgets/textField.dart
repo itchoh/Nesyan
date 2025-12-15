@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nesyan/core/constant/colors.dart';
 import '../constant/text_style.dart';
 
@@ -27,57 +28,65 @@ class AppTextField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
-      controller: controller,
-      style: AppFontStyle.TextInInputField(),
-      obscureText: obscureText,
-      keyboardType: keyboardType,
-      validator: validator,
-      inputFormatters: inputFormatters,
-      decoration: InputDecoration(
-        isDense: true,
-        contentPadding: const EdgeInsets.symmetric(
-          vertical: 16,
-        ),
-        hintText: hintText,
-        hintStyle: AppFontStyle.HintText(),
-        prefixIcon: prefixIcon == null
-            ? null
-            : Padding(
-          padding: const EdgeInsets.only(left: 24, right: 16),
-          child: prefixIcon,
-        ),
-        prefixIconConstraints: const BoxConstraints(
-          minWidth: 16,
-          minHeight: 16,
-        ),
-        suffixIcon: suffixIcon,
-        suffixIconConstraints: const BoxConstraints(
-          minWidth: 16,
-          minHeight: 16,
-        ),
-        suffixIconColor: grayChateau,
-        filled: true,
-        fillColor: luxuryWhite,
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(24),
-          borderSide: const BorderSide(
-            color: whiteMarble, // light stroke
-            width: 1,
+    return SizedBox(
+      height: 56.h,
+      child: TextFormField(
+        controller: controller,
+        style: AppFontStyle.TextInInputField(),
+        obscureText: obscureText,
+        keyboardType: keyboardType,
+        validator: validator,
+        inputFormatters: inputFormatters,
+        decoration: InputDecoration(
+          isDense: true,
+          contentPadding: const EdgeInsets.symmetric(
+            vertical: 16,
           ),
-        ),
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(24),
-          borderSide: const BorderSide(
-            color: whiteMarble,
-            width: 1,
+          hintText: hintText,
+          hintStyle: AppFontStyle.HintText(),
+          prefixIcon: prefixIcon == null
+              ? null
+              : Padding(
+            padding: const EdgeInsets.only(left: 24, right: 16),
+            child: prefixIcon,
           ),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(24),
-          borderSide: const BorderSide(
-            color: whiteMarble, // slightly darker on focus
-            width: 1.2,
+          prefixIconConstraints: const BoxConstraints(
+            minWidth: 16,
+            minHeight: 16,
+          ),
+          suffixIcon: suffixIcon,
+          suffixIconConstraints: const BoxConstraints(
+            minWidth: 16,
+            minHeight: 16,
+          ),
+          suffixIconColor: grayChateau,
+          filled: true,
+          fillColor: luxuryWhite,
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(24),
+            borderSide: const BorderSide(
+              color: whiteMarble, // light stroke
+              width: 1,
+            ),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(24),
+            borderSide: const BorderSide(
+              color: whiteMarble,
+              width: 1,
+            ),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(24),
+            borderSide: const BorderSide(
+              color: whiteMarble, // slightly darker on focus
+              width: 1.2,
+            ),
+          ),
+          errorBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(24),
+              borderSide: BorderSide(
+                  color:redShimmer )
           ),
         ),
       ),
