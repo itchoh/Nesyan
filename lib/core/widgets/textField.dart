@@ -39,9 +39,6 @@ class AppTextField extends StatelessWidget {
         inputFormatters: inputFormatters,
         decoration: InputDecoration(
           isDense: true,
-          contentPadding: const EdgeInsets.symmetric(
-            vertical: 16,
-          ),
           hintText: hintText,
           hintStyle: AppFontStyle.HintText(),
           prefixIcon: prefixIcon == null
@@ -54,7 +51,12 @@ class AppTextField extends StatelessWidget {
             minWidth: 16,
             minHeight: 16,
           ),
-          suffixIcon: suffixIcon,
+          suffixIcon: suffixIcon== null
+              ? null
+              : Padding(
+            padding: const EdgeInsets.only(left: 16, right: 24),
+            child: suffixIcon,
+          ),
           suffixIconConstraints: const BoxConstraints(
             minWidth: 16,
             minHeight: 16,

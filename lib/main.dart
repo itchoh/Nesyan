@@ -39,13 +39,13 @@ class Home extends StatelessWidget {
     return Scaffold(
       body: Padding(padding: EdgeInsetsGeometry.all(24),
         child: Column(
-
         children: [
           SizedBox(height: 100,),
           MainButton(funName: "signup",onPressed: (){},),
           SizedBox(height: 100,),
           MainButton(funName: "signup",onPressed: (){},width:0.5.sw,),
-          AppTextField(hintText: 'Enter your first name',prefixIcon:AppIconStyle.medium(AppIcons.person,color: grayChateau),),
+          SizedBox(height: 100,),
+          AppTextField(hintText: 'Enter your first name',prefixIcon:AppIconStyle.medium(AppIcons.person,color: grayChateau),suffixIcon: AppIconStyle.medium(AppIcons.person,color: grayChateau),),
         ],
       ),)
     );
