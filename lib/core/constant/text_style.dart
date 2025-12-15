@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import '../../colors.dart';
+import 'colors.dart';
 
 class AppFontStyle{
   static TextStyle Title1(Color c){
