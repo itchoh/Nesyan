@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:nesyan/core/constant/icon_style.dart';
+import 'package:nesyan/core/constant/icons.dart';
 import 'package:nesyan/core/widgets/main_button.dart';
+
+import 'core/constant/colors.dart';
+import 'core/widgets/textField.dart';
 void main() {
   runApp(const Nesyan());
 }
@@ -32,14 +37,17 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      body: Padding(padding: EdgeInsetsGeometry.all(24),
+        child: Column(
+
         children: [
           SizedBox(height: 100,),
           MainButton(funName: "signup",onPressed: (){},),
           SizedBox(height: 100,),
           MainButton(funName: "signup",onPressed: (){},width:0.5.sw ,),
+          AppTextField(hintText: 'Enter your first name',prefixIcon: AppIconStyle.small(AppIcons.person,color: grayChateau),),
         ],
-      ),
+      ),)
     );
   }
 }

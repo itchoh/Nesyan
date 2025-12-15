@@ -13,8 +13,7 @@ class AppIconStyle {
       }) {
     return SvgPicture.asset(
       iconPath,
-      width: size,
-      height: size,
+      height: 5,
       colorFilter: ColorFilter.mode(
         color,
         BlendMode.srcIn,

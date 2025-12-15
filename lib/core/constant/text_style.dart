@@ -117,7 +117,7 @@ class AppFontStyle{
   }
   static TextStyle TextInInputField(){
     return TextStyle(
-      color: Colors.black,
+      color: coolBlack,
       fontSize: 20,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
@@ -189,7 +189,7 @@ class AppFontStyle{
   }
   static TextStyle HintText(){
     return TextStyle(
-      color: Colors.black,
+      color: grayChateau,
       fontSize: 11,
       fontWeight: FontWeight.w600,
       fontFamily: 'Inter',
