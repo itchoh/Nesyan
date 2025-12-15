@@ -17,21 +17,29 @@ class Nesyan extends StatelessWidget {
        builder: (context, child) {
          return MaterialApp(
            debugShowCheckedModeBanner: false,
-           home: Scaffold(
-             body: Column(
-               children: [
-                 SizedBox(height: 100,),
-                 MainButton(funName: "signup",onPressed: (){},),
-                 SizedBox(height: 100,),
-                 MainButton(funName: "signup",onPressed: (){},width:0.5.sw ,),
-               ],
-             ),
-           ),
+           home: Home(),
          );
        },
        //child: const HomeScreen(),
      );
     // MaterialApp(
     // );
+  }
+}
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Column(
+        children: [
+          SizedBox(height: 100,),
+          MainButton(funName: "signup",onPressed: (){},),
+          SizedBox(height: 100,),
+          MainButton(funName: "signup",onPressed: (){},width:0.5.sw ,),
+        ],
+      ),
+    );
   }
 }

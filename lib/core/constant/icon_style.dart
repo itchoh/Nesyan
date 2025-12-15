@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import 'colors.dart';
+
 class AppIconStyle {
   AppIconStyle._();
 
   static Widget icon(
       String iconPath, {
         double size = 24,
-        Color color = Colors.black,
+        Color color = black,
       }) {
     return SvgPicture.asset(
       iconPath,
