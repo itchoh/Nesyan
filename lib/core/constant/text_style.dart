@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:nesyan/colors.dart';
+
+import 'colors.dart';
 
 class AppFontStyle{
   static TextStyle Title1(Color c){
