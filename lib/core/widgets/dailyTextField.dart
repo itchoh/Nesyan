@@ -4,66 +4,64 @@ import 'package:nesyan/core/constant/colors.dart';
 import '../constant/text_style.dart';
 
 class Dailytextfield extends StatelessWidget {
-  const Dailytextfield({super.key, this.suffixIcon, this.keyboardType, this.validator, this.inputFormatters, this.controller});
+  const Dailytextfield({super.key, this.suffixIcon, this.keyboardType, this.validator, this.inputFormatters, this.controller, this.maxLines=1, required this.fillcolor, required this.bordercolor, this.hintText});
   final Widget? suffixIcon;
+  final String? hintText;
+  final int? maxLines;
   final TextInputType? keyboardType;
   final String? Function(String?)? validator;
   final List<TextInputFormatter>? inputFormatters;
   final TextEditingController? controller;
-
+  final Color? fillcolor;
+  final Color bordercolor;
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: neutralOffWhite10,
-        borderRadius: BorderRadius.circular(10),
-        boxShadow: [
-        ],
-      ),
-        child: TextFormField(
-          controller: controller,
-          style: AppFontStyle.DailyTextInInputField(),
-          keyboardType: keyboardType,
-          validator: validator,
-          inputFormatters: inputFormatters,
-          decoration: InputDecoration(
-            isDense: true,
-            suffixIcon: suffixIcon== null
-                ? null
-                : Padding(
-              padding: const EdgeInsets.only(left: 8, right: 16),
-              child: suffixIcon,
-            ),
-            suffixIconConstraints: const BoxConstraints(
-              minWidth: 16,
-              minHeight: 16,
-            ),
-            suffixIconColor: rainbowGrey,
-            filled: true,
-            fillColor: neutralOffWhite10,
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(10),
-              borderSide:  BorderSide(
-                color: traditionalGreen92,
-                width: 1,
-              ),
-            ),
-            enabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(24),
-              borderSide:  BorderSide(
-                color: traditionalGreen92,
-                width: 1,
-              ),
-            ),
-            focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(24),
-              borderSide: BorderSide(
-                color: traditionalGreen92, // slightly darker on focus
-                width: 1,
-              ),
-            ),
+    return TextFormField(
+      controller: controller,
+      style: AppFontStyle.DailyTextInInputField(),
+       maxLines: maxLines,
+      keyboardType: keyboardType,
+      validator: validator,
+      inputFormatters: inputFormatters,
+      decoration: InputDecoration(
+        hintText: hintText,
+        hintStyle: AppFontStyle.HintText(),
+        isDense: true,
+        suffixIcon: suffixIcon== null
+            ? null
+            : Padding(
+          padding: const EdgeInsets.only(left: 8, right: 16),
+          child: suffixIcon,
+        ),
+        suffixIconConstraints: const BoxConstraints(
+          minWidth: 16,
+          minHeight: 16,
+        ),
+        suffixIconColor: rainbowGrey,
+        filled: true,
+        fillColor: fillcolor,
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10),
+          borderSide:  BorderSide(
+            color: bordercolor,
+            width: 1,
           ),
         ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(24),
+          borderSide:  BorderSide(
+            color: bordercolor,
+            width: 1,
+          ),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(24),
+          borderSide: BorderSide(
+            color: bordercolor, // slightly darker on focus
+            width: 1,
+          ),
+        ),
+      ),
     );
   }
 }

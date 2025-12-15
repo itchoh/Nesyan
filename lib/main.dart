@@ -55,7 +55,7 @@ class Home extends StatelessWidget {
               ),
             ),
             SizedBox(height: 50),
-            Dailytextfield()
+            Dailytextfield(fillcolor: neutralOffWhite10, bordercolor: traditionalGreen92,)
           ],
         ),
       ),

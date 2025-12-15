@@ -60,7 +60,7 @@ final gin50 = const Color(0xFFE8F5E9).withOpacity(0.5);
 final gin60 = const Color(0xFFE8F5E9).withOpacity(0.6);
 
 final neutralOffWhite10 = const Color(0xFFE8E6E6).withOpacity(0.1);
-final traditionalGreen92 = const Color(0xFF4CAF50).withOpacity(0.92);
+final traditionalGreen92 =  const Color(0xFF4CAF50).withOpacity(0.92);
 
 final cuteGrey80 = const Color(0xFFB3B3B3).withOpacity(0.8);
 final starDust50 = const Color(0xFF9E9E9E).withOpacity(0.5);
