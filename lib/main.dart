@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nesyan/core/constant/icon_style.dart';
 import 'package:nesyan/core/constant/icons.dart';
 import 'package:nesyan/core/widgets/main_button.dart';
 import 'core/constant/colors.dart';
-import 'core/widgets/textField.dart';
+import 'core/widgets/dailyTextField.dart';
+import 'core/widgets/textFieldForm.dart';
 
 void main() {
   runApp(const Nesyan());
@@ -33,6 +33,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Padding(
         padding: EdgeInsetsGeometry.all(24),
         child: Column(
@@ -41,7 +42,7 @@ class Home extends StatelessWidget {
             MainButton(funName: "signup", onPressed: () {}),
             SizedBox(height: 100),
             MainButton(funName: "signup", onPressed: () {}, width: 0.5.sw),
-            SizedBox(height: 100),
+            SizedBox(height: 50),
             AppTextField(
               hintText: 'Enter your first name',
               prefixIcon: AppIconStyle.medium(
@@ -53,6 +54,8 @@ class Home extends StatelessWidget {
                 color: grayChateau,
               ),
             ),
+            SizedBox(height: 50),
+            Dailytextfield()
           ],
         ),
       ),

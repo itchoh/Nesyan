@@ -122,6 +122,13 @@ class AppFontStyle{
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
     );
+  } static TextStyle DailyTextInInputField(){
+    return TextStyle(
+      color: coolBlack,
+      fontSize: 14,
+      fontWeight: FontWeight.w400,
+      fontFamily: 'Inter',
+    );
   }
   static TextStyle AnswerOrTitCardORreminderItemsOrInputButtomSheet(){
     return TextStyle(
