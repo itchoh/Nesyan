@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nesyan/core/constant/icon_style.dart';
 import 'package:nesyan/core/constant/icons.dart';
 import 'package:nesyan/core/widgets/main_button.dart';
-
 import 'core/constant/colors.dart';
 import 'core/widgets/textField.dart';
 void main() {
@@ -44,8 +44,8 @@ class Home extends StatelessWidget {
           SizedBox(height: 100,),
           MainButton(funName: "signup",onPressed: (){},),
           SizedBox(height: 100,),
-          MainButton(funName: "signup",onPressed: (){},width:0.5.sw ,),
-          AppTextField(hintText: 'Enter your first name',prefixIcon: AppIconStyle.small(AppIcons.person,color: grayChateau),),
+          MainButton(funName: "signup",onPressed: (){},width:0.5.sw,),
+          AppTextField(hintText: 'Enter your first name',prefixIcon:AppIconStyle.medium(AppIcons.person,color: grayChateau),),
         ],
       ),)
     );

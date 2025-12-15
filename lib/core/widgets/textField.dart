@@ -35,39 +35,51 @@ class AppTextField extends StatelessWidget {
       validator: validator,
       inputFormatters: inputFormatters,
       decoration: InputDecoration(
+        isDense: true,
+        contentPadding: const EdgeInsets.symmetric(
+          vertical: 16,
+        ),
         hintText: hintText,
         hintStyle: AppFontStyle.HintText(),
-        prefixIcon: prefixIcon,
-
+        prefixIcon: prefixIcon == null
+            ? null
+            : Padding(
+          padding: const EdgeInsets.only(left: 24, right: 16),
+          child: prefixIcon,
+        ),
+        prefixIconConstraints: const BoxConstraints(
+          minWidth: 16,
+          minHeight: 16,
+        ),
         suffixIcon: suffixIcon,
+        suffixIconConstraints: const BoxConstraints(
+          minWidth: 16,
+          minHeight: 16,
+        ),
         suffixIconColor: grayChateau,
         filled: true,
         fillColor: luxuryWhite,
-
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(30),
+          borderRadius: BorderRadius.circular(24),
           borderSide: const BorderSide(
             color: whiteMarble, // light stroke
             width: 1,
           ),
         ),
-
         enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(30),
+          borderRadius: BorderRadius.circular(24),
           borderSide: const BorderSide(
             color: whiteMarble,
             width: 1,
           ),
         ),
-
         focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(30),
+          borderRadius: BorderRadius.circular(24),
           borderSide: const BorderSide(
             color: whiteMarble, // slightly darker on focus
             width: 1.2,
           ),
         ),
-
       ),
     );
   }
