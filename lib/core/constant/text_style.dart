@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
 
+import '../../colors.dart';
+
 class AppFontStyle{
   static TextStyle Title1(Color c){
     return TextStyle(
@@ -12,7 +14,7 @@ class AppFontStyle{
   }
   static TextStyle Lists1(){
     return const TextStyle(
-        color: Colors.black,
+        color: black,
         fontSize: 18,
         fontWeight: FontWeight.w300,
         fontFamily: 'Inter'
@@ -28,7 +30,7 @@ class AppFontStyle{
   }
   static TextStyle PhoneNumber(){
     return const TextStyle(
-        color: Colors.black,
+        color: black,
         fontSize: 18,
         fontWeight: FontWeight.w500,
         fontFamily: 'Inter'
@@ -36,7 +38,7 @@ class AppFontStyle{
   }
   static TextStyle Alert(){
     return const TextStyle(
-        color: Colors.black,
+        color: black,
         fontSize: 15,
         fontWeight: FontWeight.w500,
         fontFamily: 'Inter'
@@ -46,14 +48,14 @@ class AppFontStyle{
     return const TextStyle(
       fontSize: 14,
       fontWeight: FontWeight.w400,
-      color: Colors.black,
+      color: black,
       fontFamily: 'Inter'
     );
   }
   static TextStyle TitleInputText(){
     return const TextStyle(
       fontSize: 23,
-      color: Colors.black,
+      color: black,
       fontFamily: 'Inter',
       fontWeight: FontWeight.w500
 
@@ -63,19 +65,19 @@ class AppFontStyle{
     return const TextStyle(
       fontSize: 18,
       fontWeight: FontWeight.w400,
-      color: Colors.black,
+      color: black,
     );
   }
   static TextStyle TitleShowBottomSheetWidgetTit(){
     return TextStyle(
-      color: Colors.black,
+      color: black,
       fontSize: 25,
       fontFamily: 'Inter',
     );
   }
   static TextStyle Quection(){
     return TextStyle(
-      color: Colors.black,
+      color: black,
       fontSize: 14,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
@@ -83,7 +85,7 @@ class AppFontStyle{
   }
   static TextStyle NumQues(){
     return TextStyle(
-      color: Colors.black,
+      color: black,
       fontSize: 26,
       fontWeight: FontWeight.w500,
       fontFamily: 'Inter',
@@ -91,7 +93,7 @@ class AppFontStyle{
   }
   static TextStyle NameOrtextinnnOrSecondTitleOrThirdTitle(){
     return TextStyle(
-      color: Colors.black,
+      color: black,
       fontSize: 16,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
@@ -99,7 +101,7 @@ class AppFontStyle{
   }
   static TextStyle Butt(){
     return TextStyle(
-      color: Colors.black,
+      color: black,
       fontSize: 40,
       fontWeight: FontWeight.w500,
       fontFamily: 'Inter',
@@ -107,7 +109,7 @@ class AppFontStyle{
   }
   static TextStyle DoubleButt(){
     return TextStyle(
-      color: Colors.black,
+      color: black,
       fontSize: 23,
       fontWeight: FontWeight.w600,
       fontFamily: 'Inter',
@@ -115,7 +117,7 @@ class AppFontStyle{
   }
   static TextStyle TextInInputField(){
     return TextStyle(
-      color: Colors.black,
+      color: black,
       fontSize: 20,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
@@ -123,7 +125,7 @@ class AppFontStyle{
   }
   static TextStyle AnswerOrTitCardORreminderItemsOrInputButtomSheet(){
     return TextStyle(
-      color: Colors.black,
+      color: black,
       fontSize: 12,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
@@ -131,7 +133,7 @@ class AppFontStyle{
   }
   static TextStyle TextinnnOrSecondTitle(){
     return TextStyle(
-      color: Colors.black,
+      color: black,
       fontSize: 12,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
@@ -139,7 +141,7 @@ class AppFontStyle{
   }
   static TextStyle TitlePage(){
     return TextStyle(
-      color: Colors.black,
+      color: black,
       fontSize: 22,
       fontWeight: FontWeight.w500,
       fontFamily: 'Inter',
@@ -147,7 +149,7 @@ class AppFontStyle{
   }
   static TextStyle Subtitle(){
     return TextStyle(
-      color: Colors.black,
+      color: black,
       fontSize: 20,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
@@ -155,7 +157,7 @@ class AppFontStyle{
   }
   static TextStyle TitleItemsButtomSheetOritemsReminder(){
     return TextStyle(
-      color: Colors.black,
+      color: black,
       fontSize: 18,
       fontWeight: FontWeight.w500,
       fontFamily: 'Inter',
@@ -163,7 +165,7 @@ class AppFontStyle{
   }
   static TextStyle disease(){
     return TextStyle(
-      color: Colors.black,
+      color: black,
       fontSize: 10,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
@@ -171,7 +173,7 @@ class AppFontStyle{
   }
   static TextStyle TitlePageBold(){
     return TextStyle(
-      color: Colors.black,
+      color: black,
       fontSize: 22,
       fontWeight: FontWeight.w700,
       fontFamily: 'Inter',
@@ -179,7 +181,7 @@ class AppFontStyle{
   }
   static TextStyle buttont(){
     return TextStyle(
-      color: Colors.black,
+      color: black,
       fontSize: 16,
       fontWeight: FontWeight.w600,
       fontFamily: 'Inter',
@@ -187,7 +189,7 @@ class AppFontStyle{
   }
   static TextStyle HintText(){
     return TextStyle(
-      color: Colors.black,
+      color: black,
       fontSize: 11,
       fontWeight: FontWeight.w600,
       fontFamily: 'Inter',
@@ -195,7 +197,7 @@ class AppFontStyle{
   }
   static TextStyle MessageBoxTitle(){
     return TextStyle(
-      color: Colors.black,
+      color: black,
       fontSize: 20,
       fontWeight: FontWeight.w600,
       fontFamily: 'Inter',
