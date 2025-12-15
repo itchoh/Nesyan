@@ -6,6 +6,7 @@ import 'package:nesyan/core/constant/icons.dart';
 import 'package:nesyan/core/widgets/main_button.dart';
 import 'core/constant/colors.dart';
 import 'core/widgets/textField.dart';
+
 void main() {
   runApp(const Nesyan());
 }
@@ -15,39 +16,46 @@ class Nesyan extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     return ScreenUtilInit(
-       designSize: const Size(392.7, 856.7),
-       minTextAdapt: true,
-       splitScreenMode: true,
-       builder: (context, child) {
-         return MaterialApp(
-           debugShowCheckedModeBanner: false,
-           home: Home(),
-         );
-       },
-       //child: const HomeScreen(),
-     );
-    // MaterialApp(
-    // );
+    return ScreenUtilInit(
+      designSize: const Size(392.7, 856.7),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      builder: (context, child) {
+        return MaterialApp(debugShowCheckedModeBanner: false, home: Home());
+      },
+    );
   }
 }
+
 class Home extends StatelessWidget {
   const Home({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(padding: EdgeInsetsGeometry.all(24),
+      body: Padding(
+        padding: EdgeInsetsGeometry.all(24),
         child: Column(
-        children: [
-          SizedBox(height: 100,),
-          MainButton(funName: "signup",onPressed: (){},),
-          SizedBox(height: 100,),
-          MainButton(funName: "signup",onPressed: (){},width:0.5.sw,),
-          SizedBox(height: 100,),
-          AppTextField(hintText: 'Enter your first name',prefixIcon:AppIconStyle.medium(AppIcons.person,color: grayChateau),suffixIcon: AppIconStyle.medium(AppIcons.person,color: grayChateau),),
-        ],
-      ),)
+          children: [
+            SizedBox(height: 100),
+            MainButton(funName: "signup", onPressed: () {}),
+            SizedBox(height: 100),
+            MainButton(funName: "signup", onPressed: () {}, width: 0.5.sw),
+            SizedBox(height: 100),
+            AppTextField(
+              hintText: 'Enter your first name',
+              prefixIcon: AppIconStyle.medium(
+                AppIcons.person,
+                color: grayChateau,
+              ),
+              suffixIcon: AppIconStyle.medium(
+                AppIcons.person,
+                color: grayChateau,
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
