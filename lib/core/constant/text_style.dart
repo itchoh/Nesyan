@@ -22,23 +22,23 @@ class AppFontStyle{
   }
   static TextStyle TitleGame(){
     return const TextStyle(
-        color: Colors.black38,
+        color: black,
         fontSize: 18,
         fontWeight: FontWeight.w400,
         fontFamily: 'Inter'
     );
   }
   static TextStyle PhoneNumber(){
-    return const TextStyle(
-        color: Colors.black,
+    return  TextStyle(
+        color: black50,
         fontSize: 18,
         fontWeight: FontWeight.w500,
         fontFamily: 'Inter'
     );
   }
   static TextStyle Alert(){
-    return const TextStyle(
-        color: Colors.black,
+    return  TextStyle(
+        color: black50,
         fontSize: 15,
         fontWeight: FontWeight.w500,
         fontFamily: 'Inter'

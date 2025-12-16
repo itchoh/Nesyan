@@ -4,7 +4,18 @@ import 'package:nesyan/core/constant/colors.dart';
 import '../constant/text_style.dart';
 
 class Dailytextfield extends StatelessWidget {
-  const Dailytextfield({super.key, this.suffixIcon, this.keyboardType, this.validator, this.inputFormatters, this.controller, this.maxLines=1, required this.fillcolor, required this.bordercolor, this.hintText});
+  const Dailytextfield({
+    super.key,
+    this.suffixIcon,
+    this.keyboardType,
+    this.validator,
+    this.inputFormatters,
+    this.controller,
+    this.maxLines = 1,
+    required this.fillcolor,
+    required this.bordercolor,
+    this.hintText,
+  });
   final Widget? suffixIcon;
   final String? hintText;
   final int? maxLines;
@@ -19,7 +30,7 @@ class Dailytextfield extends StatelessWidget {
     return TextFormField(
       controller: controller,
       style: AppFontStyle.DailyTextInInputField(),
-       maxLines: maxLines,
+      maxLines: maxLines,
       keyboardType: keyboardType,
       validator: validator,
       inputFormatters: inputFormatters,
@@ -27,12 +38,12 @@ class Dailytextfield extends StatelessWidget {
         hintText: hintText,
         hintStyle: AppFontStyle.HintText(),
         isDense: true,
-        suffixIcon: suffixIcon== null
+        suffixIcon: suffixIcon == null
             ? null
             : Padding(
-          padding: const EdgeInsets.only(left: 8, right: 16),
-          child: suffixIcon,
-        ),
+                padding: const EdgeInsets.only(left: 8, right: 16),
+                child: suffixIcon,
+              ),
         suffixIconConstraints: const BoxConstraints(
           minWidth: 16,
           minHeight: 16,
@@ -42,17 +53,11 @@ class Dailytextfield extends StatelessWidget {
         fillColor: fillcolor,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
-          borderSide:  BorderSide(
-            color: bordercolor,
-            width: 1,
-          ),
+          borderSide: BorderSide(color: bordercolor, width: 1),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(24),
-          borderSide:  BorderSide(
-            color: bordercolor,
-            width: 1,
-          ),
+          borderSide: BorderSide(color: bordercolor, width: 1),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(24),
