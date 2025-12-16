@@ -29,4 +29,5 @@ class AppIcons {
   static const String notification = 'assets/icons/svg/notification.svg';
   static const String plus = 'assets/icons/svg/plus.svg';
   static const String shine = 'assets/icons/svg/shine.svg';
+  static const String delete ='assets/icons/svg/delete.svg';
 }
