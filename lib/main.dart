@@ -4,6 +4,7 @@ import 'package:nesyan/core/constant/icon_style.dart';
 import 'package:nesyan/core/constant/icons.dart';
 import 'package:nesyan/core/widgets/main_button.dart';
 import 'core/constant/colors.dart';
+import 'core/widgets/containers.dart';
 import 'core/widgets/dailyTextField.dart';
 import 'core/widgets/textFieldForm.dart';
 
@@ -33,31 +34,40 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: hintOfRed,
       body: Padding(
         padding: EdgeInsetsGeometry.all(24),
-        child: Column(
-          children: [
-            SizedBox(height: 100),
-            MainButton(funName: "signup", onPressed: () {}),
-            SizedBox(height: 100),
-            MainButton(funName: "signup", onPressed: () {}, width: 0.5.sw),
-            SizedBox(height: 50),
-            AppTextField(
-              hintText: 'Enter your first name',
-              prefixIcon: AppIconStyle.medium(
-                AppIcons.person,
-                color: grayChateau,
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              SizedBox(height: 20),
+              // MainButton(funName: "signup", onPressed: () {}),
+              // SizedBox(height: 20),
+              // MainButton(funName: "signup", onPressed: () {}, width: 0.5.sw),
+              SizedBox(height: 20),
+              AppTextField(
+                hintText: 'Enter your first name',
+                prefixIcon: AppIconStyle.medium(
+                  AppIcons.person,
+                  color: grayChateau,
+                ),
+                suffixIcon: AppIconStyle.medium(
+                  AppIcons.person,
+                  color: grayChateau,
+                ),
               ),
-              suffixIcon: AppIconStyle.medium(
-                AppIcons.person,
-                color: grayChateau,
-              ),
-            ),
-            SizedBox(height: 50),
-            Dailytextfield(fillcolor: neutralOffWhite10, bordercolor: traditionalGreen92,)
-          ],
-        ),
+              SizedBox(height: 20),
+              Dailytextfield(fillcolor: neutralOffWhite10, bordercolor: traditionalGreen92,),
+              Reminder_Check(text: 'Check medicine Schedule',color: white,borderColor: grannyApple,)
+              , SizedBox(height: 20,)
+              ,FamilyBox(title: 'Mohamed', subtitle: 'Brother', number: '0123667894',)
+            ,SizedBox(height: 20,)
+              ,GameBox(title: 'Card Game', subtitle: 'Description',),
+              SizedBox(height: 30,),
+
+            ],
+          ),
+        )
       ),
     );
   }

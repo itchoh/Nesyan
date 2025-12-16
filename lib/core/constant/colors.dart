@@ -8,6 +8,7 @@ const black = Color(0xFF000000);
 const grayChateau = Color(0xFFA1A8B0);
 
 const classicMatteGrey = Color(0xFF6E6E6E);
+const hintOfRed = Color(0xFFF9F9F9);
 const grannyApple = Color(0xFFD1FAE5);
 const whiteMarble = Color(0xFFE5E7EB);
 const luxuryWhite = Color(0xFFF9FAFB);
