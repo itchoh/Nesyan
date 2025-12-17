@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:nesyan/core/constant/colors.dart';
+import 'package:nesyan/core/widgets/containers.dart';
 import '../core/constant/text_style.dart';
 import '../core/widgets/main_button.dart';
 class GameScreen extends StatelessWidget {
@@ -8,8 +10,17 @@ class GameScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16,vertical: 100),
-      child: MainButton(funName: "Game", onPressed: () {},textstyle: AppFontStyle.buttont(),
+      child: Column(
+        children: [
+          ReminderCheck(text: "Do you play?Do you play?Do you play?Do you play?Do you play?Do you play?Do you play?",borderColor: grannyApple ),
+          GameBox(subtitle: "important game",title: "Game",)
+        ],
       ),
     );
+    /*Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16,vertical: 100),
+      child: MainButton(funName: "Game", onPressed: () {},textstyle: AppFontStyle.buttont(),
+      ),
+    );*/
   }
 }

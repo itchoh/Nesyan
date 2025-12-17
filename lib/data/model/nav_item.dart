@@ -5,6 +5,6 @@ class NavItem {
   final String label;
 
    NavItem(this.icon, this.label){
-    AppIconStyle.large(icon);
+    AppIconStyle.medium(icon);
   }
 }
