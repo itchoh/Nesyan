@@ -48,7 +48,6 @@ class Home extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(height: 100),
-          
               MainButton(funName: "Delete",textstyle: AppFontStyle.Quection(),width: 140,hight: 25,icon: AppIconStyle.small(AppIcons.delete,color: white),fillcolor: Colors.red,bordercolor: shockingRed,onPressed: (){},
                 ),
               SizedBox(height: 100),

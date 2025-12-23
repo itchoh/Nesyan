@@ -11,7 +11,13 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16,vertical: 100),
-      child: FamilyBox(title: "Mohamed",subtitle: "Son",number: "0000000000",)
+      child: Column(
+        children: [
+          FamilyBox(title: "Mohamed",subtitle: "Son",number: "0000000000",),
+          SizedBox(height: 20,),
+          ContactInfo(text: 'Contact Info')
+        ],
+      )
       //MainButton(funName: "home", onPressed: () {},textstyle: AppFontStyle.buttont(),),
     );
   }

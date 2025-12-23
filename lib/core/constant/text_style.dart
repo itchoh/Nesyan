@@ -130,9 +130,9 @@ class AppFontStyle{
       fontFamily: 'Inter',
     );
   }
-  static TextStyle AnswerOrTitCardORreminderItemsOrInputButtomSheet(){
+  static TextStyle AnswerOrTitCardORreminderItemsOrInputButtomSheet({Color color=traditionalGreen}){
     return TextStyle(
-      color: traditionalGreen,
+      color: color,
       fontSize: 12,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',

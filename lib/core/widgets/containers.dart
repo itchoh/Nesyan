@@ -57,8 +57,9 @@ class _ReminderCheckState extends State<ReminderCheck> {
                   widget.text,
                   style: AppFontStyle.PhoneNumber(),
                   maxLines: isExpanded ? null : 1,
-                  overflow:
-                  isExpanded ? TextOverflow.visible : TextOverflow.ellipsis,
+                  overflow: isExpanded
+                      ? TextOverflow.visible
+                      : TextOverflow.ellipsis,
                 ),
               ),
             ),
@@ -68,6 +69,7 @@ class _ReminderCheckState extends State<ReminderCheck> {
     );
   }
 }
+
 class FamilyBox extends StatelessWidget {
   const FamilyBox({
     super.key,
@@ -146,12 +148,130 @@ class GameBox extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 8,),
-      Text(title, style: AppFontStyle.Title1(Colors.black)),
-      Text(subtitle, style: AppFontStyle.Alert()),
-          SizedBox(height: 8,),
+          SizedBox(height: 8),
+          Text(title, style: AppFontStyle.Title1(Colors.black)),
+          Text(subtitle, style: AppFontStyle.Alert()),
+          SizedBox(height: 8),
         ],
       ),
     );
   }
 }
+
+class ContactInfo extends StatelessWidget {
+  const ContactInfo({super.key, required this.text});
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 156,
+      decoration: BoxDecoration(
+        color: white,
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Column(
+        children: [
+          Container(
+            height: 32,
+            width: double.infinity,
+            decoration: BoxDecoration(
+              color: padua35,
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(12),
+                topRight: Radius.circular(12),
+              ),
+            ),
+            child: Padding(
+              padding: EdgeInsetsGeometry.symmetric(
+                vertical: 8,
+                horizontal: 16,
+              ),
+              child: Text(
+                text,
+                style:
+                    AppFontStyle.AnswerOrTitCardORreminderItemsOrInputButtomSheet(),
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsetsGeometry.symmetric(horizontal: 16),
+            child: Column(
+              children: [
+                ContactRow(
+                  iconpath: AppIcons.person,
+                  answer: 'Gender',
+                  disease: 'Female',
+                ),
+                ContactRow(
+                  iconpath: AppIcons.person,
+                  answer: 'Gender',
+                  disease: 'Female',
+                ),
+                ContactRow(
+                  iconpath: AppIcons.person,
+                  answer: 'Gender',
+                  disease: 'Female',
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+class ContactRow extends StatelessWidget {
+  const ContactRow({
+    super.key,
+    required this.iconpath,
+    required this.answer,
+    required this.disease,
+  });
+  final String iconpath;
+  final String answer;
+  final String disease;
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        BackgroundIcon(iconpath: iconpath,),
+        SizedBox(width: 12),
+        Column(
+          children: [
+            Text(
+              answer,
+              style:
+                  AppFontStyle.AnswerOrTitCardORreminderItemsOrInputButtomSheet(
+                    color: grayChateau,
+                  ),
+            ),
+            Text(disease, style: AppFontStyle.disease()),
+          ],
+        ),
+      ],
+    );
+  }
+}
+class BackgroundIcon extends StatelessWidget {
+  const BackgroundIcon({super.key, required this.iconpath});
+  final String iconpath;
+  @override
+  Widget build(BuildContext context) {
+    return  Stack(
+      alignment: AlignmentGeometry.center,
+      children: [
+        Container(
+          height: 26,
+          width: 26,
+          decoration: BoxDecoration(
+            color: grannyApple,
+            borderRadius: BorderRadius.circular(10),
+          ),
+        ),
+        AppIconStyle.small(iconpath, color: traditionalGreen),
+      ],
+    );
+  }
+}
+
