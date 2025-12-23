@@ -258,20 +258,16 @@ class BackgroundIcon extends StatelessWidget {
   final String iconpath;
   @override
   Widget build(BuildContext context) {
-    return  Stack(
-      alignment: AlignmentGeometry.center,
-      children: [
-        Container(
-          height: 26,
-          width: 26,
-          decoration: BoxDecoration(
-            color: grannyApple,
-            borderRadius: BorderRadius.circular(10),
-          ),
-        ),
-        AppIconStyle.small(iconpath, color: traditionalGreen),
-      ],
-    );
+    return  Container(
+      padding: EdgeInsets.all(5),
+              height: 26,
+              width: 26,
+              decoration: BoxDecoration(
+                color: grannyApple,
+                borderRadius: BorderRadius.circular(10),
+              ),
+           child:  AppIconStyle.small(iconpath, color: traditionalGreen),
+
+        );
   }
 }
-
