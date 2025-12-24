@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nesyan/core/constant/colors.dart';
 import 'package:nesyan/core/constant/icons.dart';
+import 'package:nesyan/core/widgets/main_button.dart';
 
 import '../constant/icon_style.dart';
 import '../constant/text_style.dart';
@@ -221,6 +222,7 @@ class ContactInfo extends StatelessWidget {
     );
   }
 }
+
 class ContactRow extends StatelessWidget {
   const ContactRow({
     super.key,
@@ -235,7 +237,7 @@ class ContactRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        BackgroundIcon(iconpath: iconpath,),
+        BackgroundIcon(iconpath: iconpath),
         SizedBox(width: 12),
         Column(
           children: [
@@ -253,21 +255,361 @@ class ContactRow extends StatelessWidget {
     );
   }
 }
+
 class BackgroundIcon extends StatelessWidget {
   const BackgroundIcon({super.key, required this.iconpath});
   final String iconpath;
   @override
   Widget build(BuildContext context) {
-    return  Container(
+    return Container(
       padding: EdgeInsets.all(5),
-              height: 26,
-              width: 26,
-              decoration: BoxDecoration(
-                color: grannyApple,
-                borderRadius: BorderRadius.circular(10),
-              ),
-           child:  AppIconStyle.small(iconpath, color: traditionalGreen),
+      height: 26,
+      width: 26,
+      decoration: BoxDecoration(
+        color: grannyApple,
+        borderRadius: BorderRadius.circular(10),
+      ),
+      child: AppIconStyle.small(iconpath, color: traditionalGreen),
+    );
+  }
+}
 
-        );
+class AppointmentContainer extends StatelessWidget {
+  const AppointmentContainer({super.key, required this.iconpath});
+  final String iconpath;
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: white,
+        borderRadius: BorderRadius.circular(10),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          CircleAvatar(
+            backgroundColor: blueChalk,
+            radius: 16,
+            child: AppIconStyle.small(iconpath, color: sportyPurple),
+          ),
+          SizedBox(width: 12,),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Text(
+                    'data',
+                    style: AppFontStyle.NameOrtextinnnOrSecondTitleOrThirdTitle(),
+                  ),
+                  SizedBox(width: 155,),
+                  Container(
+                    padding: EdgeInsets.all(5),
+                    decoration: BoxDecoration(
+                      color: crystalPeak,
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+
+                    child: Center(
+                      child: Text('Check - up ',style: AppFontStyle.AnswerOrTitCardORreminderItemsOrInputButtomSheet(color: techBlue),),
+                    ),
+                  ),
+                ],
+              ),
+              Text('data', style: AppFontStyle.TimeOrSimiButton()),
+              Text('data', style: AppFontStyle.TimeOrSimiButton()),
+              Text('data', style: AppFontStyle.TimeOrSimiButton()),
+            ],
+          ),
+
+
+        ],
+      ),
+    );
+  }
+}
+
+class RoutineContainer extends StatelessWidget {
+  const RoutineContainer({super.key, required this.iconpath});
+  final String iconpath;
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: white,
+        borderRadius: BorderRadius.circular(10),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          CircleAvatar(
+            backgroundColor: blueChalk,
+            radius: 16,
+            child: AppIconStyle.small(iconpath, color: sportyPurple),
+          ),
+          SizedBox(width: 12,),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Text(
+                    'data',
+                    style: AppFontStyle.NameOrtextinnnOrSecondTitleOrThirdTitle(),
+                  ),
+                  SizedBox(width: 155,),
+                  Container(
+                    padding: EdgeInsets.all(5),
+                    decoration: BoxDecoration(
+                      color: crystalPeak,
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+
+                    child: Center(
+                      child: Text('Check - up ',style: AppFontStyle.AnswerOrTitCardORreminderItemsOrInputButtomSheet(color: techBlue),),
+                    ),
+                  ),
+                ],
+              ),
+              Text('data', style: AppFontStyle.TimeOrSimiButton()),
+              Text('data', style: AppFontStyle.TimeOrSimiButton()),
+            ],
+          ),
+
+
+        ],
+      ),
+    );
+  }
+}
+
+class GameContainer extends StatelessWidget {
+  const GameContainer({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 100,
+      decoration: BoxDecoration(
+        color: white,
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Container(
+            height: 100,
+            width: 100,
+            decoration: BoxDecoration(
+              color: grayChateau,
+              borderRadius: BorderRadius.only(bottomLeft: Radius.circular(16),topLeft:Radius.circular(16) ),
+            ),
+          ),
+          SizedBox(width: 12,),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('Game',style: AppFontStyle.Subtitle(),),
+              Text('data',style: AppFontStyle.NameOrtextinnnOrSecondTitleOrThirdTitle(),),
+            ],
+          ),
+          Spacer(),
+          Padding(padding: EdgeInsetsGeometry.only(right: 12),child: AppIconStyle.medium(AppIcons.done),),
+        ],
+      ),
+    );
+  }
+}
+
+class MedicineContainer extends StatelessWidget {
+  const MedicineContainer({super.key, required this.iconpath});
+  final String iconpath;
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: white,
+        borderRadius: BorderRadius.circular(10),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          CircleAvatar(
+            backgroundColor: blueChalk,
+            radius: 16,
+            child: AppIconStyle.small(iconpath, color: sportyPurple),
+          ),
+          SizedBox(width: 12,),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Text(
+                    'data',
+                    style: AppFontStyle.NameOrtextinnnOrSecondTitleOrThirdTitle(),
+                  ),
+                  SizedBox(width: 185,),
+                  Container(
+                    padding: EdgeInsets.all(5),
+                    decoration: BoxDecoration(
+                      color: grannyApple,
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: Center(
+                      child: Text('Taken',style: AppFontStyle.AnswerOrTitCardORreminderItemsOrInputButtomSheet(color: traditionalGreen),),
+                    ),
+                  ),
+                ],
+              ),
+              Text('data', style: AppFontStyle.TimeOrSimiButton()),
+              Text('data', style: AppFontStyle.TimeOrSimiButton()),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class EditMedicineContainer extends StatelessWidget {
+  const EditMedicineContainer({super.key, required this.iconpath});
+  final String iconpath;
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: white,
+        borderRadius: BorderRadius.circular(10),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          CircleAvatar(
+            backgroundColor: blueChalk,
+            radius: 16,
+            child: AppIconStyle.small(iconpath, color: sportyPurple),
+          ),
+          SizedBox(width: 12,),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Text(
+                    'data',
+                    style: AppFontStyle.NameOrtextinnnOrSecondTitleOrThirdTitle(),
+                  ),
+                  SizedBox(width: 185,),
+                  Container(
+                    padding: EdgeInsets.all(5),
+                    decoration: BoxDecoration(
+                      color: grannyApple,
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: Center(
+                      child: Text('Taken',style: AppFontStyle.AnswerOrTitCardORreminderItemsOrInputButtomSheet(color: traditionalGreen),),
+                    ),
+                  ),
+                ],
+              ),
+              Text('data', style: AppFontStyle.TimeOrSimiButton()),
+              Text('data', style: AppFontStyle.TimeOrSimiButton()),
+              Row(
+                children: [
+                  MainButton(funName: "signup", onPressed: () {},width: 130,hight: 32,radius:12,fillcolor: white,textstyle: AppFontStyle.AnswerOrTitCardORreminderItemsOrInputButtomSheet() ,icon: AppIconStyle.small(
+                    AppIcons.privacy,
+                    color: grayChateau,
+                  ),
+                    bordercolor: superGrey,
+                  ),
+                  SizedBox(width: 20,),
+                  MainButton(funName: "signup", onPressed: () {},width: 130,hight: 32,radius:12,fillcolor: white,textstyle: AppFontStyle.AnswerOrTitCardORreminderItemsOrInputButtomSheet() ,icon: AppIconStyle.small(
+                    AppIcons.privacy,
+                    color: grayChateau,
+                  ),
+                    bordercolor: superGrey,
+                  ),
+                ],
+              )
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class FamilyContainer extends StatelessWidget {
+  const FamilyContainer({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 235,
+      width: 162,
+      decoration: BoxDecoration(
+        color: white,
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child:Column(
+        children: [
+          Container(
+            height: 86,
+            padding:EdgeInsets.only(right: 46,left: 46,top: 16) ,
+            decoration: BoxDecoration(
+              color: gin60,
+              borderRadius: BorderRadius.only(topLeft: Radius.circular(16),topRight: Radius.circular(16)),
+            ),
+            child: Container(
+              decoration: BoxDecoration(
+                color: chalice,
+                borderRadius: BorderRadius.circular(16),
+              ),
+            ),
+          ),
+          Container(
+            height: 86,
+            width: double.infinity,
+            decoration: BoxDecoration(
+              color: gin40,
+              borderRadius: BorderRadius.only(topLeft: Radius.circular(16),topRight: Radius.circular(16)),
+            ),
+            child: Column(
+              children: [
+                Text('data'),
+                Text('data'),
+                MainButton(funName: "signup", onPressed: () {},width: 130,hight: 32,radius:12,fillcolor: white,textstyle: AppFontStyle.AnswerOrTitCardORreminderItemsOrInputButtomSheet() ,icon: AppIconStyle.small(
+                  AppIcons.privacy,
+                  color: grayChateau,
+                ),
+                  bordercolor: superGrey,
+                ),
+              ],
+            ),
+          ),
+          Row(
+            children: [
+              MainButton(funName: "sig", onPressed: () {},width: 70,hight: 32,radius:12,fillcolor: white,textstyle: AppFontStyle.AnswerOrTitCardORreminderItemsOrInputButtomSheet() ,icon: AppIconStyle.small(
+                AppIcons.privacy,
+                color: grayChateau,
+              ),
+                bordercolor: superGrey,
+              ),
+              MainButton(funName: "sig", onPressed: () {},width: 70,hight: 32,radius:12,fillcolor: white,textstyle: AppFontStyle.AnswerOrTitCardORreminderItemsOrInputButtomSheet() ,icon: AppIconStyle.small(
+                AppIcons.privacy,
+                color: grayChateau,
+              ),
+                bordercolor: superGrey,
+              ),
+            ],
+          ),
+        ],
+      ) ,
+    );
   }
 }

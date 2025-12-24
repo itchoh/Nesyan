@@ -45,10 +45,10 @@ class AppFontStyle{
     );
   }
   static TextStyle TimeOrSimiButton(){
-    return const TextStyle(
+    return TextStyle(
       fontSize: 14,
       fontWeight: FontWeight.w400,
-      color: Colors.black,
+      color: black60,
       fontFamily: 'Inter'
     );
   }
