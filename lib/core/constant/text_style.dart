@@ -4,209 +4,333 @@ import 'package:flutter/material.dart';
 import 'colors.dart';
 
 class AppFontStyle{
-  static TextStyle Title1(Color c){
+  static TextStyle interMedium20_2(Color black, {Color c = grayChateau}){
     return TextStyle(
         color: c,
         fontSize: 20,
         fontWeight: FontWeight.w500,
-        fontFamily: 'Inter'
+        fontFamily: 'Inter',
+      letterSpacing: -2
     );
   }
-  static TextStyle Lists1(){
-    return const TextStyle(
-        color: Colors.black,
+  static TextStyle interLight18({Color c = grayChateau}){
+    return TextStyle(
+        color: c,
         fontSize: 18,
         fontWeight: FontWeight.w300,
         fontFamily: 'Inter'
     );
   }
-  static TextStyle TitleGame(){
-    return const TextStyle(
-        color: black,
+  static TextStyle interRegular18({Color c = grayChateau}){
+    return TextStyle(
+        color: c,
         fontSize: 18,
         fontWeight: FontWeight.w400,
         fontFamily: 'Inter'
     );
   }
-  static TextStyle PhoneNumber(){
+  static TextStyle interRegular15({Color c = black}){
     return  TextStyle(
-        color: black50,
-        fontSize: 18,
-        fontWeight: FontWeight.w500,
-        fontFamily: 'Inter'
-    );
-  }
-  static TextStyle Alert(){
-    return  TextStyle(
-        color: black50,
+        color: c,
         fontSize: 15,
-        fontWeight: FontWeight.w500,
+        fontWeight: FontWeight.w400,
         fontFamily: 'Inter'
     );
   }
-  static TextStyle TimeOrSimiButton(){
+  static TextStyle interRegular15_H150__05({Color c = grayChateau}) {
+    return  TextStyle(
+        color: c,
+        fontSize: 15,
+        fontWeight: FontWeight.w400,
+        fontFamily: 'Inter',
+        letterSpacing: 0.5,
+        height: 1.5
+    );
+  }
+  static TextStyle interRegular14({Color c = grayChateau}){
     return TextStyle(
       fontSize: 14,
       fontWeight: FontWeight.w400,
-      color: black60,
+      color: c,
       fontFamily: 'Inter'
     );
   }
-  static TextStyle TitleInputText(){
-    return const TextStyle(
-      fontSize: 23,
-      color: Colors.black,
+  static TextStyle interMedium14_H140({Color c = grayChateau}){
+    return TextStyle(
+      fontSize: 14,
+      fontWeight: FontWeight.w500,
+      color: c,
       fontFamily: 'Inter',
-      fontWeight: FontWeight.w500
+      height: 1.4
+    );
+  }
+  static TextStyle interRegular14_2({Color c = grayChateau}){
+    return TextStyle(
+      fontSize: 14,
+      fontWeight: FontWeight.w400,
+      color: c,
+      fontFamily: 'Inter',
+      letterSpacing: -2
+    );
+  }
+  static TextStyle interRegular14__2({Color c = grayChateau}){
+    return TextStyle(
+      fontSize: 14,
+      fontWeight: FontWeight.w400,
+      color: c,
+      fontFamily: 'Inter',
+      letterSpacing: 2
+    );
+  }
+  static TextStyle interRegular23({Color c = grayChateau}){
+    return TextStyle(
+      fontSize: 23,
+      color: c,
+      fontFamily: 'Inter',
+      fontWeight: FontWeight.w400
 
     );
   }
-  static TextStyle Gender(){
-    return const TextStyle(
-      fontSize: 18,
-      fontWeight: FontWeight.w400,
-      color: Colors.black,
-    );
-  }
-  static TextStyle TitleShowBottomSheetWidgetTit(){
+  static TextStyle interRegular25({Color c = grayChateau}){
     return TextStyle(
-      color: Colors.black,
+      color: c,
       fontSize: 25,
       fontFamily: 'Inter',
+      fontWeight: FontWeight.w400
     );
   }
-  static TextStyle Quection(){
+  static TextStyle interRegular26({Color c = grayChateau}){
     return TextStyle(
-      color: Colors.black,
-      fontSize: 14,
-      fontWeight: FontWeight.w400,
+      color: c,
+      fontSize: 25,
       fontFamily: 'Inter',
+      fontWeight: FontWeight.w400
     );
   }
-  static TextStyle NumQues(){
+  static TextStyle interMedium26_2({Color c = grayChateau}){
     return TextStyle(
-      color: Colors.black,
+      color: c,
       fontSize: 26,
       fontWeight: FontWeight.w500,
       fontFamily: 'Inter',
+      letterSpacing: -2
     );
   }
-  static TextStyle NameOrtextinnnOrSecondTitleOrThirdTitle(){
+  static TextStyle interRegular16({Color c = grayChateau}){
     return TextStyle(
-      color: Colors.black,
+      color: c,
       fontSize: 16,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
     );
   }
-  static TextStyle Butt(){
+  static TextStyle interRegular16_H150({Color c = grayChateau}){
     return TextStyle(
-      color: Colors.black,
+      color: c,
+      fontSize: 16,
+      fontWeight: FontWeight.w400,
+      fontFamily: 'Inter',
+      height: 1.5
+    );
+  }
+  static TextStyle interRegular16__2({Color c = grayChateau}){
+    return TextStyle(
+      color: c,
+      fontSize: 16,
+      fontWeight: FontWeight.w400,
+      fontFamily: 'Inter',
+      letterSpacing: 2
+    );
+  }
+  static TextStyle interMedium40({Color c = grayChateau}){
+    return TextStyle(
+      color: c,
       fontSize: 40,
       fontWeight: FontWeight.w500,
       fontFamily: 'Inter',
     );
   }
-  static TextStyle DoubleButt(){
+  static TextStyle interSemiBold23({Color c = grayChateau}){
     return TextStyle(
-      color: Colors.black,
+      color: c,
       fontSize: 23,
       fontWeight: FontWeight.w600,
       fontFamily: 'Inter',
     );
   }
-  static TextStyle TextInInputField(){
+  static TextStyle interRegular20({Color c = coolBlack}){
     return TextStyle(
-      color: coolBlack,
+      color: c,
       fontSize: 20,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
     );
-  } static TextStyle DailyTextInInputField(){
+  }
+  static TextStyle interRegular20__2({Color c = black}){
     return TextStyle(
-      color: coolBlack,
-      fontSize: 14,
+      color: c,
+      fontSize: 20,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
+      letterSpacing: 2
     );
   }
-  static TextStyle AnswerOrTitCardORreminderItemsOrInputButtomSheet({Color color=traditionalGreen}){
+  static TextStyle interRegular12({Color c=traditionalGreen}){
     return TextStyle(
-      color: color,
+      color: c,
       fontSize: 12,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
+      letterSpacing: 0.1
     );
   }
-  static TextStyle TextinnnOrSecondTitle(){
+  static TextStyle interRegular12_2({Color c=traditionalGreen}){
     return TextStyle(
-      color: Colors.black,
+      color: c,
       fontSize: 12,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
+      letterSpacing: -2
     );
   }
-  static TextStyle TitlePage(){
+  static TextStyle interRegular12__2({Color c=traditionalGreen}){
     return TextStyle(
-      color: Colors.black,
+      color: c,
+      fontSize: 12,
+      fontWeight: FontWeight.w400,
+      fontFamily: 'Inter',
+      letterSpacing: 2
+    );
+  }
+  static TextStyle interMedium22_2({Color c = coolBlack}){
+    return TextStyle(
+      color: c,
       fontSize: 22,
       fontWeight: FontWeight.w500,
       fontFamily: 'Inter',
+      letterSpacing: -2
     );
   }
-  static TextStyle Subtitle(){
+  static TextStyle interRegular22__2({Color c = grayChateau}){
     return TextStyle(
-      color: Colors.black,
+      color: c,
       fontSize: 20,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
+      letterSpacing: 2
     );
   }
-  static TextStyle TitleItemsButtomSheetOritemsReminder(){
+  static TextStyle interMedium18_2({Color c = grayChateau}){
     return TextStyle(
-      color: Colors.black,
+      color: c,
       fontSize: 18,
       fontWeight: FontWeight.w500,
       fontFamily: 'Inter',
+      letterSpacing: -2
     );
   }
-  static TextStyle disease(){
+  static TextStyle interMedium18__2({Color c = grayChateau}){
     return TextStyle(
-      color: Colors.black,
+      color: c,
+      fontSize: 18,
+      fontWeight: FontWeight.w500,
+      fontFamily: 'Inter',
+      letterSpacing: 2
+    );
+  }
+  static TextStyle interMedium16_H150({Color c = black}){
+    return TextStyle(
+      color: c,
+      fontSize: 16,
+      fontWeight: FontWeight.w500,
+      fontFamily: 'Inter',
+      height: 1.5
+    );
+  }
+  static TextStyle interRegular10({Color c = black}){
+    return TextStyle(
+      color: c,
       fontSize: 10,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
     );
   }
-  static TextStyle TitlePageBold(){
+  static TextStyle interBold22_2({Color c = black}){
     return TextStyle(
-      color: Colors.black,
+      color: c,
       fontSize: 22,
+      fontWeight: FontWeight.w700,
+      fontFamily: 'Inter',
+      letterSpacing: -2
+    );
+  }
+  static TextStyle interBold26({Color c = black}){
+    return TextStyle(
+      color: c,
+      fontSize: 26,
       fontWeight: FontWeight.w700,
       fontFamily: 'Inter',
     );
   }
-  static TextStyle buttont(){
+  static TextStyle interSemiBold16_H150({Color c = white}){
     return TextStyle(
-      color: white,
+      color: c,
       fontSize: 16,
       fontWeight: FontWeight.w600,
       fontFamily: 'Inter',
+      height: 1.5
     );
   }
-  static TextStyle HintText(){
+  static TextStyle interMedium11_H135({Color c = grayChateau}){
     return TextStyle(
-      color: grayChateau,
+      color: c,
       fontSize: 11,
+      fontWeight: FontWeight.w500,
+      fontFamily: 'Inter',
+      height: 1.35
+    );
+  }
+  static TextStyle interBold20_H125({Color c = black}){
+    return TextStyle(
+      color: c,
+      fontSize: 20,
+      fontWeight: FontWeight.w700,
+      fontFamily: 'Inter',
+      height: 1.25
+    );
+  }
+  static TextStyle interRegular13_H140({Color c = black}){
+    return TextStyle(
+      color: c,
+      fontSize: 13,
+      fontWeight: FontWeight.w400,
+      fontFamily: 'Inter',
+      height: 1.40
+    );
+  }
+  static TextStyle interSemiBold50__2({Color c = black}){
+    return TextStyle(
+      color:c,
+      fontSize: 50,
       fontWeight: FontWeight.w600,
       fontFamily: 'Inter',
+      letterSpacing: 2
     );
   }
-  static TextStyle MessageBoxTitle(){
+  static TextStyle interBold64_7({Color c = black}){
     return TextStyle(
-      color: Colors.black,
-      fontSize: 20,
-      fontWeight: FontWeight.w600,
+      color: c,
+      fontSize: 64,
+      fontWeight: FontWeight.w700,
+      fontFamily: 'Inter',
+      letterSpacing: -7
+    );
+  }
+  static TextStyle InterRegular104({Color c = black}){
+    return TextStyle(
+      color: c,
+      fontSize: 103.83,
+      fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
     );
   }

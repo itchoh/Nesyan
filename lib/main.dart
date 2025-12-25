@@ -48,20 +48,20 @@ class Home extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(height: 100),
-              MainButton(funName: "Delete",textstyle: AppFontStyle.Quection(),width: 140,hight: 25,icon: AppIconStyle.small(AppIcons.delete,color: white),fillcolor: Colors.red,bordercolor: shockingRed,onPressed: (){},
+              MainButton(funName: "Delete",textstyle: AppFontStyle.interRegular14_2(),width: 140,hight: 25,icon: AppIconStyle.small(AppIcons.delete,color: white),fillcolor: Colors.red,bordercolor: shockingRed,onPressed: (){},
                 ),
               SizedBox(height: 100),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  MainButton(funName: "signup", onPressed: () {},width: 130,hight: 32,radius:12,fillcolor: white,textstyle: AppFontStyle.AnswerOrTitCardORreminderItemsOrInputButtomSheet() ,icon: AppIconStyle.small(
+                  MainButton(funName: "signup", onPressed: () {},width: 130,hight: 32,radius:12,fillcolor: white,textstyle: AppFontStyle.interRegular12_2() ,icon: AppIconStyle.small(
                     AppIcons.privacy,
                     color: grayChateau,
                   ),
                     bordercolor: superGrey,
           
                   ),
-                  MainButton(funName: "signup", onPressed: () {},width: 130,hight: 32,radius:12,fillcolor: white,textstyle: AppFontStyle.AnswerOrTitCardORreminderItemsOrInputButtomSheet() ,icon: AppIconStyle.small(
+                  MainButton(funName: "signup", onPressed: () {},width: 130,hight: 32,radius:12,fillcolor: white,textstyle: AppFontStyle.interRegular12_2() ,icon: AppIconStyle.small(
                     AppIcons.privacy,
                     color: grayChateau,
           
@@ -71,7 +71,7 @@ class Home extends StatelessWidget {
                   ),
                 ],
               ),
-              MainButton(funName: "signup", onPressed: () {},textstyle: AppFontStyle.buttont(),),
+              MainButton(funName: "signup", onPressed: () {},textstyle: AppFontStyle.interSemiBold16_H150(),),
           
               SizedBox(height: 10),
               AppTextField(

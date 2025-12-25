@@ -56,7 +56,7 @@ class _ReminderCheckState extends State<ReminderCheck> {
                 },
                 child: Text(
                   widget.text,
-                  style: AppFontStyle.PhoneNumber(),
+                  style: AppFontStyle.interRegular18(),
                   maxLines: isExpanded ? null : 1,
                   overflow: isExpanded
                       ? TextOverflow.visible
@@ -107,11 +107,11 @@ class FamilyBox extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(title, style: AppFontStyle.TitleGame()),
-                Text(subtitle, style: AppFontStyle.Alert()),
+                Text(title, style: AppFontStyle.interRegular18()),
+                Text(subtitle, style: AppFontStyle.interRegular15()),
                 Row(
                   children: [
-                    Text(number, style: AppFontStyle.PhoneNumber()),
+                    Text(number, style: AppFontStyle.interRegular10()),
                     Spacer(flex: 1),
                     AppIconStyle.medium(AppIcons.play),
                   ],
@@ -150,8 +150,8 @@ class GameBox extends StatelessWidget {
             ),
           ),
           SizedBox(height: 8),
-          Text(title, style: AppFontStyle.Title1(Colors.black)),
-          Text(subtitle, style: AppFontStyle.Alert()),
+          Text(title, style: AppFontStyle.interMedium20_2(black)),
+          Text(subtitle, style: AppFontStyle.interRegular15()),
           SizedBox(height: 8),
         ],
       ),
@@ -191,7 +191,7 @@ class ContactInfo extends StatelessWidget {
               child: Text(
                 text,
                 style:
-                    AppFontStyle.AnswerOrTitCardORreminderItemsOrInputButtomSheet(),
+                    AppFontStyle.interRegular12_2(),
               ),
             ),
           ),
@@ -244,11 +244,11 @@ class ContactRow extends StatelessWidget {
             Text(
               answer,
               style:
-                  AppFontStyle.AnswerOrTitCardORreminderItemsOrInputButtomSheet(
-                    color: grayChateau,
+                  AppFontStyle.interRegular12_2(
+                    c: grayChateau,
                   ),
             ),
-            Text(disease, style: AppFontStyle.disease()),
+            Text(disease, style: AppFontStyle.interRegular10()),
           ],
         ),
       ],
@@ -301,7 +301,7 @@ class AppointmentContainer extends StatelessWidget {
                 children: [
                   Text(
                     'data',
-                    style: AppFontStyle.NameOrtextinnnOrSecondTitleOrThirdTitle(),
+                    style: AppFontStyle.interRegular16_H150(),
                   ),
                   SizedBox(width: 155,),
                   Container(
@@ -312,14 +312,14 @@ class AppointmentContainer extends StatelessWidget {
                     ),
 
                     child: Center(
-                      child: Text('Check - up ',style: AppFontStyle.AnswerOrTitCardORreminderItemsOrInputButtomSheet(color: techBlue),),
+                      child: Text('Check - up ',style: AppFontStyle.interRegular12_2(c: techBlue),),
                     ),
                   ),
                 ],
               ),
-              Text('data', style: AppFontStyle.TimeOrSimiButton()),
-              Text('data', style: AppFontStyle.TimeOrSimiButton()),
-              Text('data', style: AppFontStyle.TimeOrSimiButton()),
+              Text('data', style: AppFontStyle.interRegular14()),
+              Text('data', style: AppFontStyle.interRegular14()),
+              Text('data', style: AppFontStyle.interRegular14()),
             ],
           ),
 
@@ -357,7 +357,7 @@ class RoutineContainer extends StatelessWidget {
                 children: [
                   Text(
                     'data',
-                    style: AppFontStyle.NameOrtextinnnOrSecondTitleOrThirdTitle(),
+                    style: AppFontStyle.interRegular16_H150(),
                   ),
                   SizedBox(width: 155,),
                   Container(
@@ -368,13 +368,13 @@ class RoutineContainer extends StatelessWidget {
                     ),
 
                     child: Center(
-                      child: Text('Check - up ',style: AppFontStyle.AnswerOrTitCardORreminderItemsOrInputButtomSheet(color: techBlue),),
+                      child: Text('Check - up ',style: AppFontStyle.interRegular12_2(c: techBlue),),
                     ),
                   ),
                 ],
               ),
-              Text('data', style: AppFontStyle.TimeOrSimiButton()),
-              Text('data', style: AppFontStyle.TimeOrSimiButton()),
+              Text('data', style: AppFontStyle.interRegular14()),
+              Text('data', style: AppFontStyle.interRegular14()),
             ],
           ),
 
@@ -411,8 +411,8 @@ class GameContainer extends StatelessWidget {
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('Game',style: AppFontStyle.Subtitle(),),
-              Text('data',style: AppFontStyle.NameOrtextinnnOrSecondTitleOrThirdTitle(),),
+              Text('Game',style: AppFontStyle.interRegular22__2(),),
+              Text('data',style: AppFontStyle.interRegular16_H150(),),
             ],
           ),
           Spacer(),
@@ -450,7 +450,7 @@ class MedicineContainer extends StatelessWidget {
                 children: [
                   Text(
                     'data',
-                    style: AppFontStyle.NameOrtextinnnOrSecondTitleOrThirdTitle(),
+                    style: AppFontStyle.interRegular16_H150(),
                   ),
                   SizedBox(width: 185,),
                   Container(
@@ -460,13 +460,13 @@ class MedicineContainer extends StatelessWidget {
                       borderRadius: BorderRadius.circular(16),
                     ),
                     child: Center(
-                      child: Text('Taken',style: AppFontStyle.AnswerOrTitCardORreminderItemsOrInputButtomSheet(color: traditionalGreen),),
+                      child: Text('Taken',style: AppFontStyle.interRegular12_2(c: traditionalGreen),),
                     ),
                   ),
                 ],
               ),
-              Text('data', style: AppFontStyle.TimeOrSimiButton()),
-              Text('data', style: AppFontStyle.TimeOrSimiButton()),
+              Text('data', style: AppFontStyle.interRegular14()),
+              Text('data', style: AppFontStyle.interRegular14()),
             ],
           ),
         ],
@@ -502,7 +502,7 @@ class EditMedicineContainer extends StatelessWidget {
                 children: [
                   Text(
                     'data',
-                    style: AppFontStyle.NameOrtextinnnOrSecondTitleOrThirdTitle(),
+                    style: AppFontStyle.interRegular16_H150(),
                   ),
                   SizedBox(width: 185,),
                   Container(
@@ -512,23 +512,23 @@ class EditMedicineContainer extends StatelessWidget {
                       borderRadius: BorderRadius.circular(16),
                     ),
                     child: Center(
-                      child: Text('Taken',style: AppFontStyle.AnswerOrTitCardORreminderItemsOrInputButtomSheet(color: traditionalGreen),),
+                      child: Text('Taken',style: AppFontStyle.interRegular12_2(c: traditionalGreen),),
                     ),
                   ),
                 ],
               ),
-              Text('data', style: AppFontStyle.TimeOrSimiButton()),
-              Text('data', style: AppFontStyle.TimeOrSimiButton()),
+              Text('data', style: AppFontStyle.interRegular14()),
+              Text('data', style: AppFontStyle.interRegular14()),
               Row(
                 children: [
-                  MainButton(funName: "signup", onPressed: () {},width: 130,hight: 32,radius:12,fillcolor: white,textstyle: AppFontStyle.AnswerOrTitCardORreminderItemsOrInputButtomSheet() ,icon: AppIconStyle.small(
+                  MainButton(funName: "signup", onPressed: () {},width: 130,hight: 32,radius:12,fillcolor: white,textstyle: AppFontStyle.interRegular12_2() ,icon: AppIconStyle.small(
                     AppIcons.privacy,
                     color: grayChateau,
                   ),
                     bordercolor: superGrey,
                   ),
                   SizedBox(width: 20,),
-                  MainButton(funName: "signup", onPressed: () {},width: 130,hight: 32,radius:12,fillcolor: white,textstyle: AppFontStyle.AnswerOrTitCardORreminderItemsOrInputButtomSheet() ,icon: AppIconStyle.small(
+                  MainButton(funName: "signup", onPressed: () {},width: 130,hight: 32,radius:12,fillcolor: white,textstyle: AppFontStyle.interRegular12_2() ,icon: AppIconStyle.small(
                     AppIcons.privacy,
                     color: grayChateau,
                   ),
@@ -583,7 +583,7 @@ class FamilyContainer extends StatelessWidget {
               children: [
                 Text('data'),
                 Text('data'),
-                MainButton(funName: "signup", onPressed: () {},width: 130,hight: 32,radius:12,fillcolor: white,textstyle: AppFontStyle.AnswerOrTitCardORreminderItemsOrInputButtomSheet() ,icon: AppIconStyle.small(
+                MainButton(funName: "signup", onPressed: () {},width: 130,hight: 32,radius:12,fillcolor: white,textstyle: AppFontStyle.interRegular12_2() ,icon: AppIconStyle.small(
                   AppIcons.privacy,
                   color: grayChateau,
                 ),
@@ -594,13 +594,13 @@ class FamilyContainer extends StatelessWidget {
           ),
           Row(
             children: [
-              MainButton(funName: "sig", onPressed: () {},width: 70,hight: 32,radius:12,fillcolor: white,textstyle: AppFontStyle.AnswerOrTitCardORreminderItemsOrInputButtomSheet() ,icon: AppIconStyle.small(
+              MainButton(funName: "sig", onPressed: () {},width: 70,hight: 32,radius:12,fillcolor: white,textstyle: AppFontStyle.interRegular12_2() ,icon: AppIconStyle.small(
                 AppIcons.privacy,
                 color: grayChateau,
               ),
                 bordercolor: superGrey,
               ),
-              MainButton(funName: "sig", onPressed: () {},width: 70,hight: 32,radius:12,fillcolor: white,textstyle: AppFontStyle.AnswerOrTitCardORreminderItemsOrInputButtomSheet() ,icon: AppIconStyle.small(
+              MainButton(funName: "sig", onPressed: () {},width: 70,hight: 32,radius:12,fillcolor: white,textstyle: AppFontStyle.interRegular12_2() ,icon: AppIconStyle.small(
                 AppIcons.privacy,
                 color: grayChateau,
               ),

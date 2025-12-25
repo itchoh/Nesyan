@@ -32,7 +32,7 @@ class AppTextField extends StatelessWidget {
       height: 56.h,
       child: TextFormField(
         controller: controller,
-        style: AppFontStyle.TextInInputField(),
+        style: AppFontStyle.interRegular20(),
         obscureText: obscureText,
         keyboardType: keyboardType,
         validator: validator,
@@ -40,7 +40,7 @@ class AppTextField extends StatelessWidget {
         decoration: InputDecoration(
           isDense: true,
           hintText: hintText,
-          hintStyle: AppFontStyle.HintText(),
+          hintStyle: AppFontStyle.interMedium11_H135(),
           prefixIcon: prefixIcon == null
               ? null
               : Padding(

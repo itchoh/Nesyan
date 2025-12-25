@@ -29,14 +29,14 @@ class Dailytextfield extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       controller: controller,
-      style: AppFontStyle.DailyTextInInputField(),
+      style: AppFontStyle.interLight18(c: black),
       maxLines: maxLines,
       keyboardType: keyboardType,
       validator: validator,
       inputFormatters: inputFormatters,
       decoration: InputDecoration(
         hintText: hintText,
-        hintStyle: AppFontStyle.HintText(),
+        hintStyle: AppFontStyle.interMedium11_H135(),
         isDense: true,
         suffixIcon: suffixIcon == null
             ? null

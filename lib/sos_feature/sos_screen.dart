@@ -11,7 +11,7 @@ class SosScreen extends StatelessWidget {
     return Scaffold(
       body:Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16,vertical: 100),
-        child: MainButton(funName: "Sos", onPressed: () {},textstyle: AppFontStyle.buttont()),
+        child: MainButton(funName: "Sos", onPressed: () {},textstyle: AppFontStyle.interSemiBold16_H150(c: Colors.white)),
       ));
   }
 }
