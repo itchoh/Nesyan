@@ -10,7 +10,7 @@ class AppFontStyle{
         fontSize: 20,
         fontWeight: FontWeight.w500,
         fontFamily: 'Inter',
-      letterSpacing: -2
+      letterSpacing: -0.02
     );
   }
   static TextStyle interLight18({Color c = grayChateau}){
@@ -18,7 +18,7 @@ class AppFontStyle{
         color: c,
         fontSize: 18,
         fontWeight: FontWeight.w300,
-        fontFamily: 'Inter'
+        fontFamily: 'Inter',
     );
   }
   static TextStyle interRegular18({Color c = grayChateau}){
@@ -43,7 +43,7 @@ class AppFontStyle{
         fontSize: 15,
         fontWeight: FontWeight.w400,
         fontFamily: 'Inter',
-        letterSpacing: 0.5,
+        letterSpacing: 0.005,
         height: 1.5
     );
   }
@@ -70,7 +70,7 @@ class AppFontStyle{
       fontWeight: FontWeight.w400,
       color: c,
       fontFamily: 'Inter',
-      letterSpacing: -2
+      letterSpacing: -0.02
     );
   }
   static TextStyle interRegular14__2({Color c = grayChateau}){
@@ -79,7 +79,7 @@ class AppFontStyle{
       fontWeight: FontWeight.w400,
       color: c,
       fontFamily: 'Inter',
-      letterSpacing: 2
+      letterSpacing: 0.02
     );
   }
   static TextStyle interRegular23({Color c = grayChateau}){
@@ -113,7 +113,7 @@ class AppFontStyle{
       fontSize: 26,
       fontWeight: FontWeight.w500,
       fontFamily: 'Inter',
-      letterSpacing: -2
+      letterSpacing: -0.02
     );
   }
   static TextStyle interRegular16({Color c = grayChateau}){
@@ -139,7 +139,7 @@ class AppFontStyle{
       fontSize: 16,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
-      letterSpacing: 2
+      letterSpacing: 0.02
     );
   }
   static TextStyle interMedium40({Color c = grayChateau}){
@@ -172,7 +172,7 @@ class AppFontStyle{
       fontSize: 20,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
-      letterSpacing: 2
+      letterSpacing: 0.02
     );
   }
   static TextStyle interRegular12({Color c=traditionalGreen}){
@@ -181,7 +181,7 @@ class AppFontStyle{
       fontSize: 12,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
-      letterSpacing: 0.1
+      letterSpacing: 0.001
     );
   }
   static TextStyle interRegular12_2({Color c=traditionalGreen}){
@@ -190,7 +190,7 @@ class AppFontStyle{
       fontSize: 12,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
-      letterSpacing: -2
+      letterSpacing: -0.02
     );
   }
   static TextStyle interRegular12__2({Color c=traditionalGreen}){
@@ -199,7 +199,7 @@ class AppFontStyle{
       fontSize: 12,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
-      letterSpacing: 2
+      letterSpacing: 0.02
     );
   }
   static TextStyle interMedium22_2({Color c = coolBlack}){
@@ -208,7 +208,7 @@ class AppFontStyle{
       fontSize: 22,
       fontWeight: FontWeight.w500,
       fontFamily: 'Inter',
-      letterSpacing: -2
+      letterSpacing: -0.02
     );
   }
   static TextStyle interRegular22__2({Color c = grayChateau}){
@@ -217,7 +217,7 @@ class AppFontStyle{
       fontSize: 20,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
-      letterSpacing: 2
+      letterSpacing: 0.02
     );
   }
   static TextStyle interMedium18_2({Color c = grayChateau}){
@@ -226,7 +226,7 @@ class AppFontStyle{
       fontSize: 18,
       fontWeight: FontWeight.w500,
       fontFamily: 'Inter',
-      letterSpacing: -2
+      letterSpacing: -0.02
     );
   }
   static TextStyle interMedium18__2({Color c = grayChateau}){
@@ -235,7 +235,7 @@ class AppFontStyle{
       fontSize: 18,
       fontWeight: FontWeight.w500,
       fontFamily: 'Inter',
-      letterSpacing: 2
+      letterSpacing: 0.02
     );
   }
   static TextStyle interMedium16_H150({Color c = black}){
@@ -261,7 +261,7 @@ class AppFontStyle{
       fontSize: 22,
       fontWeight: FontWeight.w700,
       fontFamily: 'Inter',
-      letterSpacing: -2
+      letterSpacing: -0.02
     );
   }
   static TextStyle interBold26({Color c = black}){
@@ -314,7 +314,7 @@ class AppFontStyle{
       fontSize: 50,
       fontWeight: FontWeight.w600,
       fontFamily: 'Inter',
-      letterSpacing: 2
+      letterSpacing: 0.02
     );
   }
   static TextStyle interBold64_7({Color c = black}){
@@ -323,7 +323,7 @@ class AppFontStyle{
       fontSize: 64,
       fontWeight: FontWeight.w700,
       fontFamily: 'Inter',
-      letterSpacing: -7
+      letterSpacing: -0.07
     );
   }
   static TextStyle InterRegular104({Color c = black}){

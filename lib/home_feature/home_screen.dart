@@ -15,7 +15,7 @@ class HomeScreen extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 16,vertical: 100),
           child: Column(
             children: [
-              FamilyBox(title: "Mohamed",subtitle: "Son",number: "0000000000",),
+              FamilyBox(title: "Son",subtitle: "Son",number: "0000000000",),
               SizedBox(height: 20,),
               ContactInfo(text: 'Contact Info'),
               SizedBox(height: 20,),

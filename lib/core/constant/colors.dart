@@ -6,6 +6,7 @@ const coolBlack = Color(0xFF101623);
 const traditionalGreen = Color(0xFF4CAF50);
 const black = Color(0xFF000000);
 const grayChateau = Color(0xFFA1A8B0);
+const ghostWhite = Color(0xFFF5F8FF);
 
 const classicMatteGrey = Color(0xFF6E6E6E);
 const hintOfRed = Color(0xFFF9F9F9);

@@ -107,8 +107,8 @@ class FamilyBox extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(title, style: AppFontStyle.interRegular18()),
-                Text(subtitle, style: AppFontStyle.interRegular15()),
+                Text(title, style: AppFontStyle.interRegular18(c:black)),
+                Text(subtitle, style: AppFontStyle.interRegular15(c: black50)),
                 Row(
                   children: [
                     Text(number, style: AppFontStyle.interRegular10()),
