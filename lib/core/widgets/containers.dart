@@ -209,12 +209,12 @@ class ContactInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 156,
       decoration: BoxDecoration(
         color: white,
         borderRadius: BorderRadius.circular(12),
       ),
       child: Column(
+        spacing: 8,
         children: [
           Container(
             height: 32,
@@ -242,7 +242,13 @@ class ContactInfo extends StatelessWidget {
           Padding(
             padding: EdgeInsetsGeometry.symmetric(horizontal: 16),
             child: Column(
-              children: [row1, row2, row3 == null ? SizedBox() : row3!],
+              spacing: 8,
+              children: [
+                row1,
+                row2,
+                row3 == null ? SizedBox() : row3!,
+                SizedBox(),
+              ],
             ),
           ),
         ],
