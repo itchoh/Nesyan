@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nesyan/core/constant/colors.dart';
 import 'package:nesyan/core/widgets/containers.dart';
-import '../core/constant/text_style.dart';
-import '../core/widgets/main_button.dart';
+
 
 class GameScreen extends StatelessWidget {
   const GameScreen({super.key});

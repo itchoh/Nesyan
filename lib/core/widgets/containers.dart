@@ -395,35 +395,40 @@ class MedicineContainer extends StatelessWidget {
             ],
           ),
           editable == true
-              ? Row(
-                  children: [
-                    SizedBox(width: 8),
-                    MainButton(
-                      funName: "Edit",
-                      onPressed: () {},
-                      width: 140.5.w,
-                      hight: 32,
-                      radius: 32,
-                      fillcolor: white,
-                      textstyle: AppFontStyle.interRegular12(c: black80),
-                      icon: AppIconStyle.small(AppIcons.edit, color: black),
-                      bordercolor: starDust50,
+              ? Column(
+                children: [
+                  SizedBox(height: 10.h,),
+                  Row(
+                      children: [
+                        SizedBox(width: 8),
+                        MainButton(
+                          funName: "Edit",
+                          onPressed: () {},
+                          width: 140.5.w,
+                          hight: 30.h,
+                          radius: 32,
+                          fillcolor: white,
+                          textstyle: AppFontStyle.interRegular12(c: black80),
+                          icon: AppIconStyle.moreSmall (AppIcons.edit, color: black),
+                          bordercolor: starDust50,
+                        ),
+                        Spacer(),
+                        MainButton(
+                          funName: "Delete",
+                          onPressed: () {},
+                          width: 140.5.w,
+                          hight: 30.h,
+                          radius: 32,
+                          fillcolor: brownMadder80,
+                          textstyle: AppFontStyle.interRegular12(c: black80),
+                          icon: AppIconStyle.moreSmall(AppIcons.delete, color: white),
+                          bordercolor: shockingRed,
+                        ),
+                        SizedBox(width: 8),
+                      ],
                     ),
-                    Spacer(),
-                    MainButton(
-                      funName: "Delete",
-                      onPressed: () {},
-                      width: 140.5.w,
-                      hight: 32,
-                      radius: 32,
-                      fillcolor: brownMadder80,
-                      textstyle: AppFontStyle.interRegular12(c: black80),
-                      icon: AppIconStyle.small(AppIcons.delete, color: white),
-                      bordercolor: shockingRed,
-                    ),
-                    SizedBox(width: 8),
-                  ],
-                )
+                ],
+              )
               : SizedBox(),
         ],
       ),
@@ -556,7 +561,7 @@ class _GameContainerState extends State<GameContainer> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
+      height: 97.h,
       decoration: BoxDecoration(
         color: white,
         borderRadius: BorderRadius.circular(16),

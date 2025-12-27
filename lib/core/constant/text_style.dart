@@ -9,7 +9,8 @@ class AppFontStyle {
       fontSize: 20,
       fontWeight: FontWeight.w500,
       fontFamily: 'Inter',
-      letterSpacing: -0.02,
+      letterSpacing: -0.4,
+      height: 1.0,
     );
   }
 
@@ -29,6 +30,7 @@ class AppFontStyle {
       fontSize: 18,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
+      height: 1.0,
     );
   }
 
@@ -38,6 +40,7 @@ class AppFontStyle {
       fontSize: 15,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
+      height: 1.0,
     );
   }
 
@@ -47,7 +50,7 @@ class AppFontStyle {
       fontSize: 15,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
-      letterSpacing: 0.005,
+      letterSpacing: 0.075,
       height: 1.5,
     );
   }
@@ -58,6 +61,7 @@ class AppFontStyle {
       fontWeight: FontWeight.w400,
       color: c,
       fontFamily: 'Inter',
+      height: 1.0,
     );
   }
 
@@ -77,7 +81,8 @@ class AppFontStyle {
       fontWeight: FontWeight.w400,
       color: c,
       fontFamily: 'Inter',
-      letterSpacing: -0.02,
+      letterSpacing: -0.28,
+      height: 1.0,
     );
   }
 
@@ -87,7 +92,8 @@ class AppFontStyle {
       fontWeight: FontWeight.w400,
       color: c,
       fontFamily: 'Inter',
-      letterSpacing: 0.24,
+      letterSpacing: 0.28,
+      height: 1.0,
     );
   }
 
@@ -97,6 +103,7 @@ class AppFontStyle {
       color: c,
       fontFamily: 'Inter',
       fontWeight: FontWeight.w400,
+      height: 1.0,
     );
   }
 
@@ -106,6 +113,7 @@ class AppFontStyle {
       fontSize: 25,
       fontFamily: 'Inter',
       fontWeight: FontWeight.w400,
+      height: 1.0,
     );
   }
 
@@ -115,6 +123,7 @@ class AppFontStyle {
       fontSize: 25,
       fontFamily: 'Inter',
       fontWeight: FontWeight.w400,
+      height: 1.0,
     );
   }
 
@@ -124,7 +133,8 @@ class AppFontStyle {
       fontSize: 26,
       fontWeight: FontWeight.w500,
       fontFamily: 'Inter',
-      letterSpacing: -0.02,
+      letterSpacing: -0.52,
+      height: 1.0,
     );
   }
 
@@ -154,7 +164,8 @@ class AppFontStyle {
       fontSize: 16,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
-      letterSpacing: 0.02,
+      letterSpacing: 0.32,
+      height: 1.0,
     );
   }
 
@@ -164,6 +175,7 @@ class AppFontStyle {
       fontSize: 40,
       fontWeight: FontWeight.w500,
       fontFamily: 'Inter',
+      height: 1.0,
     );
   }
 
@@ -173,6 +185,7 @@ class AppFontStyle {
       fontSize: 23,
       fontWeight: FontWeight.w600,
       fontFamily: 'Inter',
+      height: 1.0,
     );
   }
 
@@ -182,6 +195,7 @@ class AppFontStyle {
       fontSize: 20,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
+      height: 1.0,
     );
   }
 
@@ -191,7 +205,8 @@ class AppFontStyle {
       fontSize: 20,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
-      letterSpacing: 0.02,
+      letterSpacing: 0.4,
+      height: 1.0,
     );
   }
 
@@ -212,6 +227,7 @@ class AppFontStyle {
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
       letterSpacing: -0.24,
+      height: 1.0,
     );
   }
 
@@ -221,7 +237,8 @@ class AppFontStyle {
       fontSize: 12,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
-      letterSpacing: 0.02,
+      letterSpacing: 0.24,
+      height: 1.0,
     );
   }
 
@@ -231,7 +248,8 @@ class AppFontStyle {
       fontSize: 22,
       fontWeight: FontWeight.w500,
       fontFamily: 'Inter',
-      letterSpacing: -0.02,
+      letterSpacing: -0.44,
+      height: 1.0,
     );
   }
 
@@ -241,7 +259,8 @@ class AppFontStyle {
       fontSize: 20,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
-      letterSpacing: 0.02,
+      letterSpacing: 0.4,
+      height: 1.0,
     );
   }
 
@@ -251,7 +270,8 @@ class AppFontStyle {
       fontSize: 18,
       fontWeight: FontWeight.w500,
       fontFamily: 'Inter',
-      letterSpacing: -0.02,
+      letterSpacing: -0.36,
+      height: 1.0,
     );
   }
 
@@ -261,7 +281,8 @@ class AppFontStyle {
       fontSize: 18,
       fontWeight: FontWeight.w500,
       fontFamily: 'Inter',
-      letterSpacing: 0.02,
+      letterSpacing: 0.36,
+      height: 1.0,
     );
   }
 
@@ -291,7 +312,8 @@ class AppFontStyle {
       fontSize: 22,
       fontWeight: FontWeight.w700,
       fontFamily: 'Inter',
-      letterSpacing: -0.02,
+      letterSpacing: -0.44,
+      height: 1.0,
     );
   }
 
@@ -301,6 +323,7 @@ class AppFontStyle {
       fontSize: 26,
       fontWeight: FontWeight.w700,
       fontFamily: 'Inter',
+      height: 1.0,
     );
   }
 
@@ -350,7 +373,8 @@ class AppFontStyle {
       fontSize: 50,
       fontWeight: FontWeight.w600,
       fontFamily: 'Inter',
-      letterSpacing: 0.02,
+      letterSpacing: 1,
+      height: 1.0,
     );
   }
 
@@ -360,7 +384,8 @@ class AppFontStyle {
       fontSize: 64,
       fontWeight: FontWeight.w700,
       fontFamily: 'Inter',
-      letterSpacing: -0.07,
+      letterSpacing: -4.48,
+      height: 1.0,
     );
   }
 
@@ -370,6 +395,7 @@ class AppFontStyle {
       fontSize: 103.83,
       fontWeight: FontWeight.w400,
       fontFamily: 'Inter',
+      height: 1.0,
     );
   }
 }

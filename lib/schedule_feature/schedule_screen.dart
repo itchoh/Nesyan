@@ -22,8 +22,7 @@ class ScheduleScreen extends StatelessWidget {
             subTitle: "Your schedule has been saved successfully",
             buttonText: "Go to Home",
             routeFun: (){},
-            isSuccess: false
-
+            isSuccess: true
           );
         },
       ),

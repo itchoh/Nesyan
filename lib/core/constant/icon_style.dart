@@ -22,6 +22,13 @@ class AppIconStyle {
   }) {
     return icon(iconPath, size: size, color: color);
   }
+  static Widget moreSmall(
+      String iconPath, {
+        Color color = Colors.black,
+        double size = 11,
+      }) {
+    return icon(iconPath, size: size, color: color);
+  }
 
   static Widget medium(String iconPath, {Color color = Colors.black}) {
     return icon(iconPath, size: 24, color: color);
