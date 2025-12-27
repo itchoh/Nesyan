@@ -6,24 +6,21 @@ import 'colors.dart';
 class AppIconStyle {
   AppIconStyle._();
 
-  static Widget icon(
-      String iconPath, {
-        double size = 24,
-        Color color = black,
-      }) {
+  static Widget icon(String iconPath, {double size = 24, Color color = black}) {
     return SvgPicture.asset(
       iconPath,
       height: size,
       width: size,
-      colorFilter: ColorFilter.mode(
-        color,
-        BlendMode.srcIn,
-      ),
+      colorFilter: ColorFilter.mode(color, BlendMode.srcIn),
     );
   }
 
-  static Widget small(String iconPath, {Color color = Colors.black}) {
-    return icon(iconPath, size: 16, color: color);
+  static Widget small(
+    String iconPath, {
+    Color color = Colors.black,
+    double size = 16,
+  }) {
+    return icon(iconPath, size: size, color: color);
   }
 
   static Widget medium(String iconPath, {Color color = Colors.black}) {

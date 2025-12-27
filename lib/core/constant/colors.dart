@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 const white = Colors.white;
@@ -7,6 +6,7 @@ const traditionalGreen = Color(0xFF4CAF50);
 const black = Color(0xFF000000);
 const grayChateau = Color(0xFFA1A8B0);
 const ghostWhite = Color(0xFFF5F8FF);
+const paleNude = Color(0xFFF5E2E2);
 
 const classicMatteGrey = Color(0xFF6E6E6E);
 const hintOfRed = Color(0xFFF9F9F9);
@@ -62,7 +62,7 @@ final gin50 = const Color(0xFFE8F5E9).withOpacity(0.5);
 final gin60 = const Color(0xFFE8F5E9).withOpacity(0.6);
 
 final neutralOffWhite10 = const Color(0xFFE8E6E6).withOpacity(0.1);
-final traditionalGreen92 =  const Color(0xFF4CAF50).withOpacity(0.92);
+final traditionalGreen92 = const Color(0xFF4CAF50).withOpacity(0.92);
 
 final cuteGrey80 = const Color(0xFFB3B3B3).withOpacity(0.8);
 final starDust50 = const Color(0xFF9E9E9E).withOpacity(0.5);

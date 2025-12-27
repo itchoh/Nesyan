@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../constant/colors.dart';
+
 class MainButton extends StatelessWidget {
   const MainButton({
     super.key,
@@ -35,7 +36,9 @@ class MainButton extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           backgroundColor: fillcolor,
           shape: RoundedRectangleBorder(
-            side: bordercolor == null ? BorderSide.none : BorderSide(color: bordercolor!),
+            side: bordercolor == null
+                ? BorderSide.none
+                : BorderSide(color: bordercolor!),
             borderRadius: BorderRadius.circular(radius?.r ?? 32.r),
           ),
           padding: EdgeInsets.symmetric(horizontal: 12.w),
@@ -44,10 +47,7 @@ class MainButton extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            if (icon != null) ...[
-              icon!,
-              SizedBox(width: 8.w),
-            ],
+            if (icon != null) ...[icon!, SizedBox(width: 4.w)],
             Text(
               funName ?? "",
               style: textstyle,
